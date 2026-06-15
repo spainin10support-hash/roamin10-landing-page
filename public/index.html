@@ -475,6 +475,68 @@
 
     .store-card .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
 
+    /* ─── Reviews ─── */
+    .reviews-section {
+      padding: 3rem 0;
+      overflow: hidden;
+      background: var(--cream);
+    }
+
+    .reviews-track {
+      display: flex;
+      gap: 1.2rem;
+      width: max-content;
+      animation: scrollReviews 40s linear infinite;
+    }
+
+    .reviews-track:hover { animation-play-state: paused; }
+
+    .review-card {
+      flex-shrink: 0;
+      width: 280px;
+      background: var(--card);
+      border: 1px solid rgba(107,91,62,0.08);
+      border-radius: 16px;
+      padding: 1.3rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .review-stars svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--gold);
+    }
+
+    .review-text {
+      font-size: 0.85rem;
+      color: var(--mid);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .review-author {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: rgba(107,91,62,0.5);
+    }
+
+    .review-date {
+      font-size: 0.68rem;
+      color: rgba(107,91,62,0.3);
+    }
+
+    @keyframes scrollReviews {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
     /* ─── Ambassador ─── */
     .ambassador-section {
       background: var(--cream);
@@ -737,6 +799,157 @@
         <div class="feature-icon">⚡</div>
         <h3>10 Minutes</h3>
         <p>No fluff, no endless scrolling. Just what you need, fast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Reviews ═══ -->
+  <section class="reviews-section">
+    <div class="reviews-track">
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"Exactly what I needed. Used it for a weekend in Barcelona and didn't waste a second figuring things out."</p>
+        <span class="review-author">— Matt C.</span>
+        <span class="review-date">2 weeks ago</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"Sarah is worth the price alone. Asked for a hidden restaurant in Florence and she nailed it."</p>
+        <span class="review-author">— Emma L.</span>
+        <span class="review-date">last month</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"So much better than a generic guidebook. Feels like a mate who lives there wrote it."</p>
+        <span class="review-author">— Jake R.</span>
+        <span class="review-date">3 weeks ago</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"Had the app open the whole trip. Transport section saved us from a nightmare train situation."</p>
+        <span class="review-author">— Priya K.</span>
+        <span class="review-date">1 week ago</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"I mostly use it for the hotel list. Saves me hours of scrolling on Booking.com."</p>
+        <span class="review-author">— Sam W.</span>
+        <span class="review-date">2 weeks ago</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"Was skeptical about an AI travel guide but Sarah is genuinely useful. Great for spontaneous trips."</p>
+        <span class="review-author">— Aisha M.</span>
+        <span class="review-date">last month</span>
+      </div>
+      <!-- duplicate for seamless loop -->
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"Exactly what I needed. Used it for a weekend in Barcelona and didn't waste a second figuring things out."</p>
+        <span class="review-author">— Matt C.</span>
+        <span class="review-date">2 weeks ago</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"Sarah is worth the price alone. Asked for a hidden restaurant in Florence and she nailed it."</p>
+        <span class="review-author">— Emma L.</span>
+        <span class="review-date">last month</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"So much better than a generic guidebook. Feels like a mate who lives there wrote it."</p>
+        <span class="review-author">— Jake R.</span>
+        <span class="review-date">3 weeks ago</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"Had the app open the whole trip. Transport section saved us from a nightmare train situation."</p>
+        <span class="review-author">— Priya K.</span>
+        <span class="review-date">1 week ago</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"I mostly use it for the hotel list. Saves me hours of scrolling on Booking.com."</p>
+        <span class="review-author">— Sam W.</span>
+        <span class="review-date">2 weeks ago</span>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.05l-4.77 2.67.91-5.33L2.27 6.6l5.34-.78z"/></svg>
+        </div>
+        <p class="review-text">"Was skeptical about an AI travel guide but Sarah is genuinely useful. Great for spontaneous trips."</p>
+        <span class="review-author">— Aisha M.</span>
+        <span class="review-date">last month</span>
       </div>
     </div>
   </section>
