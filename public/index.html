@@ -38,7 +38,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 3rem 1.5rem 5rem;
+      padding: 2.5rem 1.5rem 4.5rem;
       position: relative;
       overflow: hidden;
     }
@@ -86,13 +86,33 @@
       animation: fadeUp 0.7s 0.35s ease forwards;
     }
 
+    .hero-phone {
+      width: 200px;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.5s ease forwards;
+      margin: 0.8rem 0 1.2rem;
+    }
+
+    .hero-phone .phone-frame {
+      box-shadow:
+        0 30px 80px rgba(212,168,67,0.08),
+        0 0 0 1px rgba(255,255,255,0.06),
+        inset 0 0 0 1px rgba(255,255,255,0.08);
+      animation: float 3.5s ease-in-out 1s infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-8px); }
+    }
+
     .hero-social {
       display: flex;
       gap: 0.8rem;
       align-items: center;
       opacity: 0;
-      animation: fadeUp 0.7s 0.5s ease forwards;
-      margin-bottom: 3.5rem;
+      animation: fadeUp 0.7s 0.65s ease forwards;
+      margin-bottom: 2.5rem;
     }
 
     .hero-social a {
@@ -578,6 +598,13 @@
     <div class="hero-stripe"></div>
     <h1>roamin<span>10</span></h1>
     <p class="hero-sub">Travel guides that respect your time. Hotels, food, transport and more — every destination, in about 10 minutes.</p>
+    <div class="hero-phone">
+      <div class="phone-frame">
+        <div class="phone-notch"><span class="pill"></span><span class="dot"></span></div>
+        <div class="phone-screen"><img src="images/italy-home.jpg" alt="App home screen" /></div>
+        <div class="phone-bezel-bottom"><span class="bar"></span></div>
+      </div>
+    </div>
     <div class="hero-social">
       <a href="https://instagram.com/nh.spain" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
@@ -592,25 +619,8 @@
   <!-- ═══ How It Works ═══ -->
   <section class="how-it-works">
     <p class="section-label">How it works</p>
-    <h2 class="section-title">Three steps to your next trip</h2>
+    <h2 class="section-title">Two steps to your next trip</h2>
     <div class="steps">
-
-      <div class="step">
-        <div class="step-phone">
-          <div class="phone-frame">
-            <div class="phone-notch"><span class="pill"></span><span class="dot"></span></div>
-            <div class="phone-screen">
-              <img src="images/italy-home.jpg" alt="App home screen showing city grid" loading="lazy" />
-            </div>
-            <div class="phone-bezel-bottom"><span class="bar"></span></div>
-          </div>
-        </div>
-        <div class="step-content">
-          <div class="step-number">01</div>
-          <h3>Pick your destination</h3>
-          <p>Choose from Spain, Italy, France and more. Each guide is handcrafted by someone who's been there.</p>
-        </div>
-      </div>
 
       <div class="step reverse">
         <div class="step-phone">
@@ -623,7 +633,7 @@
           </div>
         </div>
         <div class="step-content">
-          <div class="step-number">02</div>
+          <div class="step-number">01</div>
           <h3>Explore curated content</h3>
           <p>Hotels, restaurants, transport, events — everything you need, nothing you don't. Sorted by budget and vibe.</p>
         </div>
@@ -640,7 +650,7 @@
           </div>
         </div>
         <div class="step-content">
-          <div class="step-number">03</div>
+          <div class="step-number">02</div>
           <h3>Ask Sarah</h3>
           <p>Your AI travel advisor. Budget tips, restaurant bookings, rainy day plans — she's got your back.</p>
         </div>
