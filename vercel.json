@@ -1,4 +1,0 @@
-{
-  "buildCommand": "echo 'skipping build'",
-  "outputDirectory": "public"
-}
