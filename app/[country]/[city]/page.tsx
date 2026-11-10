@@ -12,7 +12,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ country: string; city: string }> }): Promise<Metadata> {
   const { country, city } = await params
   const destination = getDestination(country, city) ?? destinations[0]
-  return { title: `${destination.name} Travel Guide: Where to Stay, Eat & Avoid Scams | Roamin10`, description: `${destination.name} travel guide by Sarah: where to stay, things to do, weather, hotel picks and local Scam Shield tips.`, openGraph: { title: `${destination.name} Travel Guide | Roamin10`, description: destination.description, images: [{ url: destination.image, alt: `${destination.name} travel guide` }] } }
+  const title = destination.slug === 'barcelona' ? 'Barcelona Travel Guide: Where to Stay & What to Skip | Roamin10' : `${destination.name} Travel Guide: Where to Stay, Eat & Avoid Scams | Roamin10`
+ const description = destination.slug === 'barcelona' ? 'Where to stay in Barcelona, what to book ahead, how to get from the airport and the scams to avoid. A 10-minute guide by Sarah.' : `${destination.name} travel guide by Sarah: where to stay, things to do, weather, hotel picks and local Scam Shield tips.`
+ return { title, description, openGraph: { title: `${destination.name} Travel Guide | Roamin10`, description: destination.description, images: [{ url: destination.image, alt: `${destination.name} travel guide` }] } }
 }
 
 function BookingSections({ city }: { city: string }) {
