@@ -3,10 +3,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Roamin10 — Mediterranean Travel Guide',
-  description: 'The 10 Minute Spain app is a free, friendly travel guide with curated hotels, restaurants, transport, events, local weather and Sarah, your AI travel advisor.',
-  keywords: ['Spain travel app', 'Spain travel guide', 'Spanish city guides', 'free travel app', 'Mediterranean travel'],
-  alternates: { canonical: 'https://roamin10.com/' },
+  title: 'Roamin10 — Mediterranean Travel Guide & App',
+  description: 'Roamin10 is a Mediterranean travel guide and app for better Spanish city breaks, with neighbourhood advice, hotel picks, local weather and Scam Shield tips.',
+  alternates: { canonical: 'https://www.roamin10.com/' },
   generator: 'v0.app',
   icons: {
     icon: [
