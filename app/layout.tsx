@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Roamin10 — Mediterranean Travel Guide & App',
-  description: 'Roamin10 is a Mediterranean travel guide and app for better Spanish city breaks, with neighbourhood advice, hotel picks, local weather and Scam Shield tips.',
+  description: 'Discover Roamin10, the European travel app with city guides and premium planning features, plus 10 Minute Spain, free for now. Explore better with less searching.',
   alternates: { canonical: 'https://www.roamin10.com/' },
   generator: 'v0.app',
   icons: {
