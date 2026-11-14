@@ -1,8 +1,21 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import { ArrowRight, CloudSun, Compass, Search, ShieldCheck, Sparkles } from 'lucide-react'
 import { countryFilters, destinations } from '@/lib/destinations'
 import { SiteHeader } from '@/components/site-header'
 import { FeatureComparison } from '@/components/feature-comparison'
+
+export const metadata: Metadata = {
+  title: 'Roamin10 App: Free vs Premium Features & Pricing',
+  description: 'Compare Roamin10 Free and Premium: AI itineraries, Sarah chat, live travel research, offline guides, route planning and more. Try Premium free for 7 days, then £14.99/year.',
+  openGraph: {
+    title: 'Roamin10 App: Free vs Premium Features & Pricing',
+    description: 'Compare Roamin10 Free and Premium features, including Sarah AI, travel guides, offline downloads and the 7-day trial.',
+    url: 'https://www.roamin10.com/',
+    siteName: 'Roamin10',
+    type: 'website',
+  },
+}
 
 const SHOW_READER_NOTES = false // TODO: only show real reviews from real users.
 

@@ -1,4 +1,4 @@
-import { ArrowRight, Check, Minus, X } from 'lucide-react'
+import { ArrowRight, Check, ChevronDown, Minus, X } from 'lucide-react'
 
 type FeatureValue = { included: boolean; label: string }
 type Feature = { name: string; free: FeatureValue; premium: FeatureValue }
@@ -55,28 +55,36 @@ export function FeatureComparison() {
   return <section className="app-intro" id="app" aria-labelledby="app-intro-title">
     <div className="app-intro-heading">
       <p className="eyebrow">Roamin10 for Android</p>
-      <h2 id="app-intro-title">Start free. Upgrade for the juicy bits.</h2>
-      <p>Get the essentials at no cost, then unlock deeper planning tools when you need them.</p>
+      <h2 id="app-intro-title">Roamin10 Free vs Premium: compare every feature</h2>
+      <p>Start free. Upgrade for the juicy bits. See what each plan includes, how Sarah AI limits differ, and what Premium adds.</p>
     </div>
-    <div className="feature-table-shell" role="region" aria-label="Roamin10 Free and Premium feature comparison" tabIndex={0}>
-      <p className="feature-table-hint" id="feature-table-hint">Scroll horizontally to compare all features.</p>
-      <table className="feature-table" aria-describedby="feature-table-hint">
-        <caption className="sr-only">Features included with Roamin10 Free and Roamin10 Premium</caption>
-        <thead><tr><th scope="col">Features</th><th scope="col">Free</th><th scope="col" className="premium-column">Premium</th></tr></thead>
-        {groups.map((group) => <tbody key={group.name}>
-          <tr className="feature-group-heading"><th scope="colgroup" colSpan={3}>{group.name}</th></tr>
-          {group.features.map((feature) => <tr className="feature-row" key={feature.name}>
-            <th scope="row">{feature.name}</th>
-            <td><FeatureValueCell value={feature.free} /></td>
-            <td className="premium-column"><FeatureValueCell value={feature.premium} /></td>
-          </tr>)}
-        </tbody>)}
-      </table>
-    </div>
-    <div className="feature-comparison-footer">
-      <div><span className="feature-price-label">Premium</span><p>Try it free for 7 days, then £14.99/year.</p><small>Android app · Google Play</small></div>
-      <a className="primary-btn" href="https://play.google.com/store/apps/details?id=com.roamin10.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Get Roamin10 <ArrowRight size={16} /></a>
-    </div>
+    <details className="feature-details">
+      <summary className="feature-details-summary" aria-controls="feature-table-content">
+        <span className="feature-summary-copy"><strong>Compare Free and Premium</strong><small>All 21 features, usage limits, and the annual plan.</small></span>
+        <span className="feature-summary-toggle"><span className="closed-copy">Show comparison</span><span className="open-copy">Hide comparison</span><ChevronDown size={18} aria-hidden="true" /></span>
+      </summary>
+      <div className="feature-details-content" id="feature-table-content">
+        <div className="feature-table-shell" role="region" aria-label="Roamin10 Free and Premium feature comparison" tabIndex={0}>
+          <p className="feature-table-hint" id="feature-table-hint">Scroll horizontally to compare all features.</p>
+          <table className="feature-table" aria-describedby="feature-table-hint">
+            <caption className="sr-only">Features included with Roamin10 Free and Roamin10 Premium</caption>
+            <thead><tr><th scope="col">Features</th><th scope="col">Free</th><th scope="col" className="premium-column">Premium</th></tr></thead>
+            {groups.map((group) => <tbody key={group.name}>
+              <tr className="feature-group-heading"><th scope="colgroup" colSpan={3}>{group.name}</th></tr>
+              {group.features.map((feature) => <tr className="feature-row" key={feature.name}>
+                <th scope="row">{feature.name}</th>
+                <td><FeatureValueCell value={feature.free} /></td>
+                <td className="premium-column"><FeatureValueCell value={feature.premium} /></td>
+              </tr>)}
+            </tbody>)}
+          </table>
+        </div>
+        <div className="feature-comparison-footer">
+          <div><span className="feature-price-label">Premium</span><p>Try it free for 7 days, then £14.99/year.</p><small>Android app · Google Play</small></div>
+          <a className="primary-btn" href="https://play.google.com/store/apps/details?id=com.roamin10.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Get Roamin10 <ArrowRight size={16} /></a>
+        </div>
+      </div>
+    </details>
     <p className="spain-app-note">Looking for Spain-only travel tips? <a href="https://play.google.com/store/apps/details?id=com.spainten.city.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">10 Minute Spain is free for now <ArrowRight size={13} aria-hidden="true" /></a>.</p>
   </section>
 }
