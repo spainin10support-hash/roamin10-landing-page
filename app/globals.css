@@ -84,6 +84,10 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 .feature-comparison-footer small { color: #d7dce5; font-size: 11px; }
 .feature-comparison-footer .primary-btn { flex: none; background: var(--champagne); color: var(--navy); }
 .feature-comparison-footer .primary-btn:hover { background: #f2d1bb; }
+.feature-details-actions { display: flex; justify-content: flex-end; }
+.feature-collapse-button { display: inline-flex; align-items: center; gap: 7px; border: 0; background: transparent; color: var(--ink-soft); padding: 7px 4px; font-size: 11px; font-weight: 700; cursor: pointer; }
+.feature-collapse-button:hover { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+.feature-collapse-button:focus-visible { outline: 2px solid #b96c49; outline-offset: 3px; border-radius: 4px; }
 .spain-app-note { margin: -12px 0 0; color: var(--ink-soft); font-size: 12px; }
 .spain-app-note a { display: inline-flex; align-items: center; gap: 4px; color: var(--navy); font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 640px) { .app-intro { padding: 44px 0 54px; } .feature-details-summary { padding: 15px; align-items: flex-start; flex-direction: column; gap: 10px; } .feature-summary-toggle { width: 100%; justify-content: space-between; } .feature-details-content { padding: 0 10px 10px; gap: 12px; } .feature-table-shell { padding-bottom: 4px; } .feature-table-hint { display: block; } .feature-table { min-width: 640px; } .feature-comparison-footer { align-items: flex-start; flex-direction: column; padding: 22px; } }

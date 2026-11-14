@@ -1,4 +1,5 @@
 import { ArrowRight, Check, ChevronDown, Minus, X } from 'lucide-react'
+import { CollapseComparisonButton } from '@/components/collapse-comparison-button'
 
 type FeatureValue = { included: boolean; label: string }
 type Feature = { name: string; free: FeatureValue; premium: FeatureValue }
@@ -58,7 +59,7 @@ export function FeatureComparison() {
       <h2 id="app-intro-title">Roamin10 Free vs Premium: compare every feature</h2>
       <p>Start free. Upgrade for the juicy bits. See what each plan includes, how Sarah AI limits differ, and what Premium adds.</p>
     </div>
-    <details className="feature-details">
+    <details className="feature-details" id="roamin10-feature-details">
       <summary className="feature-details-summary" aria-controls="feature-table-content">
         <span className="feature-summary-copy"><strong>Compare Free and Premium</strong><small>All 21 features, usage limits, and the annual plan.</small></span>
         <span className="feature-summary-toggle"><span className="closed-copy">Show comparison</span><span className="open-copy">Hide comparison</span><ChevronDown size={18} aria-hidden="true" /></span>
@@ -83,6 +84,7 @@ export function FeatureComparison() {
           <div><span className="feature-price-label">Premium</span><p>Try it free for 7 days, then £14.99/year.</p><small>Android app · Google Play</small></div>
           <a className="primary-btn" href="https://play.google.com/store/apps/details?id=com.roamin10.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Get Roamin10 <ArrowRight size={16} /></a>
         </div>
+        <div className="feature-details-actions"><CollapseComparisonButton detailsId="roamin10-feature-details" /></div>
       </div>
     </details>
     <p className="spain-app-note">Looking for Spain-only travel tips? <a href="https://play.google.com/store/apps/details?id=com.spainten.city.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">10 Minute Spain is free for now <ArrowRight size={13} aria-hidden="true" /></a>.</p>
