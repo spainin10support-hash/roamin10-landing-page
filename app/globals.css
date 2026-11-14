@@ -119,9 +119,10 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 .search-box { display: flex; align-items: center; gap: 10px; width: min(100%, 330px); padding: 12px 14px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: #a49d93; }
 .search-box input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--navy); font-size: 12px; }
 .filter-row { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 25px; }
-.filter-row a { border: 1px solid var(--line); border-radius: 999px; background: transparent; color: #777d87; cursor: pointer; padding: 9px 15px; font-size: 11px; font-weight: 800; }
-.filter-row a.active, .filter-row a:hover { border-color: var(--navy); background: var(--navy); color: white; }
-.filter-row .coming-soon-country { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 999px; background: #f5f2ed; color: #898d94; padding: 9px 13px; font-size: 11px; font-weight: 800; cursor: not-allowed; }
+.filter-row .available-country, .filter-row .coming-soon-country { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 999px; padding: 9px 13px; font-size: 11px; font-weight: 800; }
+.filter-row .available-country { border-color: var(--navy); background: var(--navy); color: #fff; }
+.available-country small { color: var(--champagne); font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.filter-row .coming-soon-country { background: #f5f2ed; color: #898d94; }
 .coming-soon-country small { color: #a76a45; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
 .country-selector-note { margin: -15px 0 26px; color: var(--ink-soft); font-size: 12px; }
 .card-link { display: inline-flex; align-items: center; gap: 7px; color: var(--navy); font-size: 11px; font-weight: 900; }
