@@ -180,6 +180,7 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 .king-benidorm h2 { margin: 8px 0 12px; color: var(--champagne); font: 500 clamp(32px, 4vw, 52px)/1 Georgia, serif; letter-spacing: -.04em; }
 .king-benidorm p:not(.eyebrow) { max-width: 580px; margin: 0; color: #fff4e7; font-size: 16px; line-height: 1.6; }
 .king-benidorm .eyebrow { color: #ffe1c1; }
+.king-benidorm .tv-badge { display: inline-flex; margin: 0 0 10px; padding: 7px 10px 6px; border: 1px solid #fff4e7; border-radius: 4px; background: var(--champagne); box-shadow: 2px 2px 0 #0f172a40; color: var(--navy); font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 900; letter-spacing: .16em; line-height: 1; text-transform: uppercase; }
 .king-benidorm-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .king-benidorm-links a { display: inline-flex; align-items: center; gap: 8px; padding: 12px 17px; border: 1px solid #fff4e766; border-radius: 999px; color: var(--champagne); font-weight: 800; text-decoration: none; }
 .king-benidorm-links a:hover { background: #ffffff18; transform: translateY(-2px); }
