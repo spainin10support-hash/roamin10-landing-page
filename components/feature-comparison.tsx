@@ -64,6 +64,7 @@ export function FeatureComparison() {
             <a className="primary-btn app-intro-download" href="https://play.google.com/store/apps/details?id=com.roamin10.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Download on Google Play <ArrowRight size={16} aria-hidden="true" /></a>
             <small>Free to install · Premium optional · Android</small>
           </div>
+          <a className="app-intro-compare-link" href="#roamin10-feature-details">See the 21-feature comparison <ChevronDown size={14} aria-hidden="true" /></a>
         </div>
         <figure className="app-intro-device" aria-labelledby="app-intro-device-caption">
           <div className="app-device-frame" aria-hidden="true">
