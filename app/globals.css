@@ -207,6 +207,13 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 .promise-list > div { display: flex; align-items: center; gap: 16px; padding: 18px 0; border-bottom: 1px solid #ffffff1c; color: #aeb8c7; font-size: 14px; }
 .promise-list svg { flex: 0 0 auto; color: #e8b58e; }
 .promise-list strong { color: white; }
+.promise-download { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.promise-download-copy { display: grid; gap: 5px; }
+.promise-download-copy > strong { color: white; font-size: 14px; }
+.promise-download-copy small { color: #aeb8c7; font-size: 11px; }
+.promise-download-button { flex: none; background: var(--champagne); color: var(--navy); text-decoration: none; }
+.promise-download-button:hover { background: #f2d1bb; }
+@media (max-width: 640px) { .promise-download { align-items: flex-start; flex-direction: column; gap: 12px; } }
 .testimonial-marquee { overflow: hidden; padding: 28px 0 72px; background: var(--navy); color: var(--champagne); }
 .marquee-heading { width: min(1180px, calc(100% - 48px)); margin: 0 auto 24px; }
 .marquee-heading h2 { margin: 8px 0 0; color: var(--champagne); font: 500 clamp(30px, 4vw, 52px)/1 Georgia, serif; }
