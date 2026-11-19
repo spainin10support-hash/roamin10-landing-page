@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { ArrowRight, Check, ChevronDown, Minus, X } from 'lucide-react'
 import { CollapseComparisonButton } from '@/components/collapse-comparison-button'
 
@@ -55,22 +54,33 @@ function FeatureValueCell({ value }: { value: FeatureValue }) {
 
 export function FeatureComparison() {
   return <section className="app-intro" id="app" aria-labelledby="app-intro-title">
-    <div className="app-intro-showcase">
-      <div className="app-intro-heading">
-        <p className="eyebrow">The Roamin10 Android app</p>
-        <h2 id="app-intro-title">Roamin10 Free vs Premium: compare every feature</h2>
-        <p>Compare what comes with the Roamin10 Android app. Start free, then unlock more planning tools, Sarah AI and offline guides with Premium.</p>
-        <div className="app-intro-download-row">
-          <a className="primary-btn app-intro-download" href="https://play.google.com/store/apps/details?id=com.roamin10.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Download on Google Play <ArrowRight size={16} aria-hidden="true" /></a>
-          <small>Android app · Free to install · Premium optional</small>
+    <div className="app-intro-product">
+      <div className="app-intro-showcase">
+        <div className="app-intro-heading">
+          <p className="eyebrow">The Roamin10 Android app</p>
+          <h2 id="app-intro-title">Your trip, <em>in your pocket.</em></h2>
+          <p>Roamin10 is the travel app for planning and taking your trip. Start free, then unlock Sarah AI, offline guides and more with Premium.</p>
+          <div className="app-intro-download-row">
+            <a className="primary-btn app-intro-download" href="https://play.google.com/store/apps/details?id=com.roamin10.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Download on Google Play <ArrowRight size={16} aria-hidden="true" /></a>
+            <small>Free to install · Premium optional · Android</small>
+          </div>
         </div>
+        <figure className="app-intro-device" aria-labelledby="app-intro-device-caption">
+          <div className="app-device-frame" aria-hidden="true">
+            <div className="app-device-screen">
+              <div className="app-device-status"><span>9:41</span><span className="app-device-status-icons"><i /><i /><i /><b /></span></div>
+              <div className="app-device-topbar"><span className="app-device-wordmark">roamin<span>10</span></span><span className="app-device-avatar">S</span></div>
+              <div className="app-device-trip-card"><span className="app-device-overline">Your next trip</span><strong>Benidorm</strong><small>Spain · Costa Blanca</small><span className="app-device-trip-dates">12–17 Jun <span>5 nights</span></span></div>
+              <div className="app-device-plan-heading"><strong>Today&apos;s plan</strong><span>Day 1 of 4</span></div>
+              <div className="app-device-activity"><time>09:30</time><div><strong>Old Town walk</strong><small>Local favourite · 1.2 km</small></div></div>
+              <div className="app-device-activity"><time>13:00</time><div><strong>Lunch by the sea</strong><small>Market-fresh · Levante</small></div></div>
+              <div className="app-device-offline"><span className="app-device-offline-mark">↓</span><div><strong>Offline guide saved</strong><small>Premium · ready anywhere</small></div></div>
+              <div className="app-device-bottom-nav"><span>Plan</span><span>Explore</span><span>Saved</span></div>
+            </div>
+          </div>
+          <figcaption id="app-intro-device-caption">Roamin10 app preview: a Benidorm itinerary with an offline guide saved.</figcaption>
+        </figure>
       </div>
-      <figure className="app-intro-device">
-        <div className="app-intro-device-photo">
-          <Image src="/roamin10-app.png" alt="Roamin10 open on a smartphone, showing a travel itinerary in Santorini." fill sizes="(max-width: 900px) calc(100vw - 48px), 48vw" />
-        </div>
-        <figcaption><span>Roamin10 for Android</span><strong>Plan the trip. Take the guide.</strong></figcaption>
-      </figure>
     </div>
     <details className="feature-details" id="roamin10-feature-details">
       <summary className="feature-details-summary" aria-controls="feature-table-content">
