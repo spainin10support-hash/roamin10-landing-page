@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowRight, Check, ChevronDown, Minus, X } from 'lucide-react'
 import { CollapseComparisonButton } from '@/components/collapse-comparison-button'
 
@@ -54,10 +55,22 @@ function FeatureValueCell({ value }: { value: FeatureValue }) {
 
 export function FeatureComparison() {
   return <section className="app-intro" id="app" aria-labelledby="app-intro-title">
-    <div className="app-intro-heading">
-      <p className="eyebrow">Roamin10 for Android</p>
-      <h2 id="app-intro-title">Roamin10 Free vs Premium: compare every feature</h2>
-      <p>Start free. Upgrade for the juicy bits. See what each plan includes, how Sarah AI limits differ, and what Premium adds.</p>
+    <div className="app-intro-showcase">
+      <div className="app-intro-heading">
+        <p className="eyebrow">The Roamin10 Android app</p>
+        <h2 id="app-intro-title">Roamin10 Free vs Premium: compare every feature</h2>
+        <p>Compare what comes with the Roamin10 Android app. Start free, then unlock more planning tools, Sarah AI and offline guides with Premium.</p>
+        <div className="app-intro-download-row">
+          <a className="primary-btn app-intro-download" href="https://play.google.com/store/apps/details?id=com.roamin10.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Download on Google Play <ArrowRight size={16} aria-hidden="true" /></a>
+          <small>Android app · Free to install · Premium optional</small>
+        </div>
+      </div>
+      <figure className="app-intro-device">
+        <div className="app-intro-device-photo">
+          <Image src="/roamin10-app.png" alt="Roamin10 open on a smartphone, showing a travel itinerary in Santorini." fill sizes="(max-width: 900px) calc(100vw - 48px), 48vw" />
+        </div>
+        <figcaption><span>Roamin10 for Android</span><strong>Plan the trip. Take the guide.</strong></figcaption>
+      </figure>
     </div>
     <details className="feature-details" id="roamin10-feature-details">
       <summary className="feature-details-summary" aria-controls="feature-table-content">
