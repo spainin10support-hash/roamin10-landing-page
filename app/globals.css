@@ -251,6 +251,11 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 .booking-widget-heading h2 { margin: 7px 0 0; color: var(--navy); font: 500 clamp(28px, 3.5vw, 42px)/1 Georgia, serif; }
 .booking-widget-heading > p { max-width: 280px; margin: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.5; }
 .booking-widget-frame { width: 100%; min-height: 150px; overflow: hidden; border-radius: 14px; }
+.booking-widget-card--responsive { position: relative; }
+.booking-widget-card--responsive[data-widget-layout='wide'] { min-height: 440px; }
+.booking-widget-card--responsive[data-widget-layout='wide'] .booking-widget-frame { min-height: 320px; }
+.booking-widget-card--responsive[data-widget-layout='vertical'] { min-height: 620px; }
+.booking-widget-card--responsive[data-widget-layout='vertical'] .booking-widget-frame { min-height: 500px; }
 .city-email-signup { width: min(1180px, calc(100% - 48px)); margin: 48px auto 0; padding: 42px; display: grid; grid-template-columns: 1fr 1fr; gap: 42px; align-items: end; border-radius: 22px; background: var(--navy); color: var(--champagne); }
 .city-email-signup h2 { margin: 8px 0 12px; color: var(--champagne); font: 500 clamp(30px, 4vw, 48px)/1 Georgia, serif; }
 .city-email-signup > div > p:not(.eyebrow) { max-width: 480px; margin: 0; color: #dce2e8; line-height: 1.6; }
@@ -318,6 +323,13 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
   .turbopass-cta { grid-column: 2; grid-row: 4; }
   .turbopass-partner { grid-column: 2; grid-row: 5; }
 }
+.turbopass-card--compact { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 14px; }
+.turbopass-card--compact .eyebrow { grid-column: 1; grid-row: 2; margin: 0; }
+.turbopass-card--compact h2 { grid-column: 1; grid-row: 3; margin: 0; }
+.turbopass-card--compact .turbopass-image-link { grid-column: 1; grid-row: 1; align-self: start; width: 140px; max-width: 100%; margin: 0; }
+.turbopass-card--compact .turbopass-description { grid-column: 1; grid-row: 4; margin: 0; }
+.turbopass-card--compact .turbopass-cta { grid-column: 1; grid-row: 5; justify-self: start; }
+.turbopass-card--compact .turbopass-partner { grid-column: 1; grid-row: 6; margin: 0; }
 .footer-affiliate-disclosure { max-width: 360px; color: var(--ink-soft); font-size: 10px; line-height: 1.45; }
 .hotel-pick .hotel-booking-link { display: inline-flex !important; align-items: center; justify-content: center; gap: 8px; width: fit-content; max-width: 100%; padding: 12px 22px; border: 0; border-radius: 999px; background: var(--navy); color: var(--champagne); white-space: nowrap; transition: transform .2s ease, box-shadow .2s ease; }
 .hotel-pick .hotel-booking-link:hover { box-shadow: 0 8px 18px #0f172a1c; transform: translateY(-2px); }

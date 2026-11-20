@@ -52,15 +52,19 @@ const turbopassConfigByCity: Record<string, TurbopassCardConfig> = {
   granada: genericTurbopassConfig,
 }
 
-export function TurbopassAttractionsCard({ citySlug }: { citySlug: string }) {
+export function TurbopassAttractionsCard({ citySlug, countrySlug }: { citySlug: string; countrySlug: string }) {
   const config = turbopassConfigByCity[citySlug] ?? genericTurbopassConfig
+  const compact = countrySlug === 'spain' && citySlug !== 'barcelona'
 
-  return <section className="editorial-section turbopass-card" aria-labelledby="turbopass-card-title">
+  const logo = <a className="turbopass-image-link" href={config.buttonUrl} target="_blank" rel="sponsored noopener noreferrer" aria-label={config.imageLinkLabel}>
+    <img src={config.imageUrl} width={config.imageWidth} height={config.imageHeight} alt={config.imageAlt} {...{ border: '0' }} />
+  </a>
+
+  return <section className={`editorial-section turbopass-card${compact ? ' turbopass-card--compact' : ''}`} aria-labelledby="turbopass-card-title">
+    {compact && logo}
     <p className="eyebrow">{config.label}</p>
     <h2 id="turbopass-card-title">{config.heading}</h2>
-    <a className="turbopass-image-link" href={config.buttonUrl} target="_blank" rel="sponsored noopener noreferrer" aria-label={config.imageLinkLabel}>
-      <img src={config.imageUrl} width={config.imageWidth} height={config.imageHeight} alt={config.imageAlt} {...{ border: '0' }} />
-    </a>
+    {!compact && logo}
     <p className="turbopass-description">{config.description}</p>
     <a className="primary-btn turbopass-cta" href={config.buttonUrl} target="_blank" rel="sponsored noopener noreferrer">{config.buttonLabel} <ArrowRight size={15} aria-hidden="true" /></a>
     <small className="turbopass-partner">{config.partnerLabel}</small>
