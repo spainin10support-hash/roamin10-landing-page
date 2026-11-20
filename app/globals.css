@@ -340,5 +340,21 @@ h1 em, h2 em { color: var(--terracotta); font-style: italic; }
 @media (max-width: 640px) { .things-list { grid-template-columns: 1fr; } .booking-teaser { align-items: flex-start; flex-direction: column; } .city-editorial, .related-destinations { width: min(100% - 30px, 1120px); }.city-editorial { grid-template-columns: 1fr; margin-top: 16px; }.city-editorial-image { position: static; min-height: 0; padding: 15px 15px 0; }.city-editorial-image img { aspect-ratio: 4 / 5; }.city-editorial-copy { padding: 24px; }.booking-static-grid, .quick-booking-row, .related-grid { grid-template-columns: 1fr; }.app-cta { align-items: flex-start; flex-wrap: wrap; } }
 .modal-close { position: absolute; top: 14px; right: 14px; background: #ffffffd9; }
 
+@media (max-width: 767px) {
+  .city-page--spain .static-booking {
+    display: flow-root;
+    width: calc(100% - 40px);
+    margin: 24px auto 16px;
+    padding: 20px 20px 0;
+  }
+
+  .city-page--spain .static-booking h2 { margin: 8px 0 16px; }
+  .city-page--spain .quick-booking-row { grid-template-columns: minmax(0, 1fr); gap: 9px; }
+  .city-page--spain .quick-booking-pill { width: 100%; min-width: 0; }
+  .city-page--spain .static-booking .disclosure { margin: 8px 0 0; }
+  .city-page--spain .booking-widget-card { width: calc(100% - 40px); margin: 0 auto 32px; padding: 20px; }
+  .city-page--spain .booking-widget-iframe { display: block; width: 100%; max-width: 100%; }
+}
+
 @media (max-width: 900px) { .hero { grid-template-columns: 1fr; gap: 35px; padding-top: 42px; padding-bottom: 48px; } .hero-image { height: 420px; } .destination-grid { grid-template-columns: repeat(2, 1fr); } .city-guide-card, .editorial-band, .app-intro { grid-template-columns: 1fr; } .city-guide-image { min-height: 310px; } .editorial-band { gap: 30px; } }
 @media (max-width: 640px) { .site-header { height: 64px; padding: 0 15px; } .site-header.is-scrolled { height: 60px; } .menu-toggle { display: grid; place-items: center; margin-left: auto; border: 1px solid var(--line); border-radius: 12px; background: transparent; padding: 8px; color: var(--navy); } .site-header nav { display: none; position: absolute; top: 64px; right: 0; left: 0; align-items: stretch; flex-direction: column; gap: 8px; margin: 0; padding: 14px 15px 18px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: var(--champagne); box-shadow: 0 15px 40px #0f172a18; backdrop-filter: blur(18px); } .site-header nav.open { display: flex; } .site-header nav a { padding: 12px 10px; } .mobile-cta { display: inline-flex; margin-top: 4px; } .desktop-cta { display: none; } .hero { width: min(100% - 30px, 1180px); padding: 24px 0 65px; } .hero h1 { font-size: 52px; } .hero-image { min-height: 350px; border-radius: 22px; } .booking-tabs button { padding: 10px 5px; font-size: 10px; } .booking-tabs svg { display: none; } .booking-meta { display: block; } .booking-meta strong { display: block; margin-top: 5px; } .section-heading.split { display: block; } .search-box { margin-top: 20px; width: 100%; } .destination-grid { grid-template-columns: 1fr; } .guide-details, .modal-grid { grid-template-columns: 1fr; } .city-guide-copy { padding: 24px; } .footer { align-items: flex-start; flex-direction: column; } .booking-widget-heading { align-items: flex-start; flex-direction: column; gap: 12px; } .booking-widget-card { padding: 24px 18px; } .city-email-signup { grid-template-columns: 1fr; padding: 28px 22px; gap: 24px; } .email-signup-row { flex-direction: column; } .king-benidorm { align-items: flex-start; flex-direction: column; gap: 24px; margin-top: 24px; margin-bottom: 24px; } .testimonial-marquee { padding: 50px 0 56px; } .marquee-heading { width: min(100% - 30px, 1180px); } .testimonial-card { flex-basis: 230px; } .testimonial-marquee { padding: 50px 0 56px; } .marquee-heading { width: min(100% - 30px, 1180px); } .testimonial-card { flex-basis: 230px; } }
