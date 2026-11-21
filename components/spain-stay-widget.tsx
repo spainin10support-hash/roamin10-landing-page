@@ -6,7 +6,7 @@ type WidgetLayout = 'tall' | 'broad'
 
 export function SpainStayWidget({ city }: { city: string }) {
   const [layout, setLayout] = useState<WidgetLayout | null>(null)
-  const destinationQuery = city === 'Barcelona' ? `?ss=${encodeURIComponent(city)}` : ''
+  const destinationQuery = `?ss=${encodeURIComponent(city)}`
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 768px)')
