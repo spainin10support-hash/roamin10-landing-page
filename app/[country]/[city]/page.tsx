@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Car, CloudSun, Plane, ShieldCheck, Smartphone, Star } from 'lucide-react'
+import { ArrowRight, Car, CloudSun, Plane, ShieldCheck, Smartphone } from 'lucide-react'
 import { destinations, getDestination } from '@/lib/destinations'
 import { AffiliateLink } from '@/components/affiliate-link'
 import { CityEmailSignup } from '@/components/city-email-signup'
 import { TurbopassAttractionsCard } from '@/components/turbopass-attractions-card'
 import { BookingWidget } from '@/components/booking-widget'
 import { SpainStayWidget } from '@/components/spain-stay-widget'
-import { CAR_HIRE_URL, FLIGHTS_URL, HOTEL_OPEN_MODE, HOTELS_HOME_URL, cityHotelsUrl, hotelUrl } from '@/lib/affiliate'
+import { CAR_HIRE_URL, FLIGHTS_URL, HOTEL_OPEN_MODE, HOTELS_HOME_URL, hotelUrl } from '@/lib/affiliate'
 import { SiteHeader } from '@/components/site-header'
 
 export function generateStaticParams() {
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
 }
 
 function BookingSections({ city }: { city: string }) {
-  const items = [{ title: 'Hotels', icon: Star, text: `Find hotels in ${city}`, href: cityHotelsUrl(city) }, { title: 'Flights', icon: Plane, text: `Flights to ${city}`, href: FLIGHTS_URL }]
+  const items = [{ title: 'Flights', icon: Plane, text: `Flights to ${city}`, href: FLIGHTS_URL }]
   if (CAR_HIRE_URL) items.push({ title: 'Car Hire', icon: Car, text: `Car hire in ${city}`, href: CAR_HIRE_URL })
   return <section className="static-booking" aria-labelledby="booking-title"><p className="eyebrow">Know where you&apos;re going?</p><h2 id="booking-title">Book {city} without the noise.</h2><div className="quick-booking-row">{items.map(({ title, icon: Icon, text, href }) => <AffiliateLink className="quick-booking-pill" href={href} key={title}><Icon size={16} /><span><strong>{title}</strong><small>{text}</small></span><ArrowRight size={14} /></AffiliateLink>)}</div><p className="disclosure">If you book through my links I may earn a little commission, at no extra cost to you.</p></section>
 }
