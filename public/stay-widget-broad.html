@@ -11,13 +11,15 @@
   
   <script>
       (function () {
+          var destination = new URLSearchParams(window.location.search).get("ss");
           var BookingAffiliateWidget = new Booking.AffiliateWidget({
   "iframeSettings": {
     "selector": "bookingAffiliateWidget_c848139d-9dab-4241-bf2e-93c7147e270d",
     "responsive": true
   },
   "widgetSettings": {		
-"destinationurloverride": "http://www.jdoqocy.com/click-101704146-17323125?sid="
+"destinationurloverride": "http://www.jdoqocy.com/click-101704146-17323125?sid=",
+...(destination ? { "ss": destination } : {})
 	}
 });
       })();

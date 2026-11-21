@@ -13,6 +13,7 @@
 
 <script>
   (function () {
+    var destination = new URLSearchParams(window.location.search).get("ss");
     var BookingAffiliateWidget = new Booking.AffiliateWidget({
       iframeSettings: {
         selector: "bookingAffiliateWidget_e893728b-511b-4a33-a796-65c92eaae72a",
@@ -22,7 +23,7 @@
         destinationurloverride: "http://www.jdoqocy.com/click-101930161-17388354?sid=",
 		
 		// Choose one primary destination method.
-        ss: "Amsterdam",
+        ss: destination || "Amsterdam",
 		
 	    // Alternatives:
         // destId: -2140479,
