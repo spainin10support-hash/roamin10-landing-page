@@ -6,6 +6,7 @@ type WidgetLayout = 'tall' | 'broad'
 
 export function SpainStayWidget({ city }: { city: string }) {
   const [layout, setLayout] = useState<WidgetLayout | null>(null)
+  const destinationQuery = `?ss=${encodeURIComponent(city)}`
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 768px)')
@@ -27,7 +28,9 @@ export function SpainStayWidget({ city }: { city: string }) {
     </div>
     {layout && <iframe
       className="booking-widget-frame booking-widget-iframe"
-      src={layout === 'tall' ? '/stay-widget-tall.html' : '/stay-widget-broad.html'}
+      src={layout === 'tall'
+        ? `/stay-widget-tall.html${destinationQuery}`
+        : `/stay-widget-broad.html${destinationQuery}`}
       title="Search stays on Booking.com"
       width="100%"
       height={layout === 'tall' ? 620 : 340}
