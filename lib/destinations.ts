@@ -6,7 +6,7 @@ export type HotelPick = {
   href: string
 }
 
-export type CityImage = { src: string; alt: string; caption: string; credit?: string }
+export type CityImage = { src: string; alt: string; caption: string; credit?: string; creditUrl?: string; license?: string; licenseUrl?: string }
 
 export type Destination = {
   name: string
@@ -51,6 +51,44 @@ export const destinations: Destination[] = [
   { name: 'Puerto Banús', slug: 'puerto-banus', country: 'Spain', countrySlug: 'spain', region: 'Costa del Sol', airport: 'AGP', image: 'https://images.unsplash.com/photo-1540946485063-a40da27545f8?auto=format&fit=crop&w=1400&q=88', weather: '24° · Clear', weatherDetails: { temp: 24, condition: 'Clear', wind: '10 km/h', sunlight: '10 hours' }, highlights: 'Marina · Yachts · Milla de Oro', description: 'Puerto Banús is a glossy marina escape for yacht watching, palm-lined streets, designer boutiques and sunset dining.', whyVisit: 'Puerto Banús is unapologetically shiny, so I treat it like a people-watching day rather than pretend it is a secret village. The marina at dusk is genuinely fun.', thingsToDo: ['Walk the marina before the day-trippers arrive.', 'Compare the yachts over a slow coffee.', 'Take a taxi to quieter Nueva Andalucía for dinner.'], stayIn: 'Marina edge is spectacular; Nueva Andalucía is calmer and often easier at night.', scamShield: 'Confirm excursion inclusions and deposits before paying, especially for boat trips.', hotels: [{ name: 'Nueva Andalucía base', neighbourhood: 'Nueva Andalucía', description: 'I would sleep just back from the marina for quieter evenings and better value. You remain close enough to walk or take a short taxi when the lights come on.', priceBand: 'Check current rates', href: hotelLink }] },
   { name: 'Córdoba', slug: 'cordoba', country: 'Spain', countrySlug: 'spain', region: 'Andalusia', airport: 'SVQ', image: '/cordoba-mezquita-arches.png', weather: '27° · Dry heat', weatherDetails: { temp: 27, condition: 'Dry heat', wind: '7 km/h', sunlight: '11 hours' }, highlights: 'Mezquita · Roman Bridge · Patios', description: 'Córdoba rewards slow wandering through flower-filled patios, the Mezquita’s arches and the Roman Bridge at dusk.', whyVisit: 'Córdoba is best taken slowly, with shade breaks built into the plan. The Mezquita is extraordinary, but the quiet lanes and evening river light stay with me just as much.', thingsToDo: ['Enter the Mezquita at the first sensible slot.', 'Cross the Roman Bridge at sunset.', 'Look for open patios in the old quarter.'], stayIn: 'Judería puts you close to the Mezquita; Centro is easier for trains and restaurants.', scamShield: 'Buy monument tickets only through official channels and ignore anyone offering a shortcut queue.', hotels: [{ name: 'Judería stay', neighbourhood: 'Judería', description: 'I would stay in the old quarter for early access and atmospheric evening walks. Expect lanes rather than easy taxi drop-offs, which is part of the bargain.', priceBand: 'Check current rates', href: hotelLink }] },
   { name: 'Granada', slug: 'granada', country: 'Spain', countrySlug: 'spain', region: 'Andalusia', airport: 'GRX', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20and%20Sierra%20Nevada.jpg?width=1200', weather: '20° · Clear', weatherDetails: { temp: 20, condition: 'Clear', wind: '8 km/h', sunlight: '10 hours' }, highlights: 'Alhambra · Albaicín · Sierra Nevada', description: 'Dramatic Sierra Nevada backdrop, Moorish palaces, and free tapas culture.', whyVisit: 'Granada carries a heavy, spellbinding history that you can feel around every corner. Framed against the jagged, snow-capped peaks of the Sierra Nevada, it is one of the few places in Spain where the generous old tradition of free tapas with every drink is still alive and thriving. Strolling up through the white-washed lanes of the Albaicín while the sun sets behind the illuminated Alhambra is an experience that stays with you long after you leave.', thingsToDo: ['Secure your timed entry months in advance to explore the intricate Nasrid Palaces at the Alhambra.', 'Grab a drink at sunset on the terrace at Mirador de San Nicolás looking right across at the fortress.', 'Hop between lively neighborhood bars along Calle Navas for the city’s best free tapas pairings.'], stayIn: 'Albaicín for narrow cobbled hillside charm, or Centro for easy walking access to the main tapas strips.', scamShield: 'Only purchase Alhambra admission through the official patronato portal to avoid scam reselling sites. Keep your bag zipped and close in the crowded artisan lanes around the lower tea houses.', hotels: [{ name: 'Parador de Granada', neighbourhood: 'Alhambra', description: 'An extraordinary converted 15th-century monastery located right inside the actual Alhambra grounds.', priceBand: 'Check current rates', href: hotelLink }] },
+  {
+    name: 'Lisbon',
+    slug: 'lisbon',
+    country: 'Portugal',
+    countrySlug: 'portugal',
+    region: 'Lisbon',
+    airport: 'LIS',
+    image: '/lisbon-alfama-rooftops.jpg',
+    imageData: {
+      src: '/lisbon-alfama-rooftops.jpg',
+      alt: 'Terracotta rooftops of Alfama descending toward the Tagus River, with the National Pantheon visible.',
+      caption: 'Alfama rooftops and the Tagus River, viewed across Lisbon.',
+      credit: 'Dale Cruse',
+      creditUrl: 'https://commons.wikimedia.org/wiki/File:Alfama_Rooftops_and_Tagus_River_View,_Lisbon_(54733698959).jpg',
+      license: 'CC BY 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+    },
+    weather: '15° · Rain',
+    weatherDetails: { temp: 15, condition: 'Moderate rain', wind: '11 km/h', sunlight: '6 hours' },
+    highlights: 'Alfama · Chiado · Bairro Alto',
+    description: 'Seven steep hills, clattering yellow trams, sun-bleached terracotta roofs, and cold natural wine poured over worn limestone cobblestones.',
+    whyVisit: `There is an unmistakable, slow-burning magic to Lisbon that catches you completely off guard. Portugal’s coastal capital rises over seven dramatic hills above the Tagus estuary, where Atlantic air meets southern European sunshine. Its black-and-white calçada portuguesa pavements reflect the light across weathered Pombaline façades, while a quietly adventurous food and nightlife scene keeps the city looking forward.\n\nThe neighborhoods each have their own pace. Baixa is the elegant, geometric heart rebuilt after the 1755 earthquake, opening onto Praça do Comércio. Alfama climbs toward São Jorge Castle through whitewashed lanes, wrought-iron balconies and tiny tascas where fado still carries through the evening. West of the centre, Chiado and Bairro Alto mix old cafés and bookshops with bars that spill onto the streets after dark; further uphill, Príncipe Real is known for leafy gardens, independent shops and natural wine.\n\nLisbon is best measured in bicas, warm custard tarts and spontaneous pauses at its miradouros. Spend the day climbing the hills, riding a vintage Remodelado tram and watching sailboats cross the river. As dusk turns the rooftops amber, settle in for grilled sardines, garlic shrimp and a carafe of Vinho Verde.`,
+    thingsToDo: [
+      'Skip the long Belém pastry queue and stop at Manteigaria in Chiado or Time Out Market. Watch the pastries come out of the oven, then eat a warm pastel de nata with cinnamon.',
+      'Take a drink to Miradouro da Senhora do Monte in Graça for a wide view over the castle, rooftops and Tagus as the light fades.',
+      'Wander Alfama after 9:30 p.m. and look for a small tasca with live fado rather than booking a dinner-and-show package.',
+    ],
+    stayIn: 'Choose Chiado or the edge of Bairro Alto for a central base with historic streets, cafés and evening restaurants close by.',
+    scamShield: `Around Rossio and Rua Augusta, people may offer “hash” or “weed” that is often just herbs or seasoning. Don’t engage; say “Não” and keep walking.\n\nConfirm a tuk-tuk’s total fare for everyone before you board. Some drivers may quote a low price and later claim it was per person; compare with a rideshare before agreeing.\n\nTram 28 can be crowded and targeted by pickpockets working in groups. Keep phones and wallets in zipped, secure pockets, especially while boarding.`,
+    hotels: [{ name: 'Bairro Alto Hotel', neighbourhood: 'Chiado / Bairro Alto', description: 'An 18th-century palace conversion on Praça Luís de Camões, with Portuguese materials, carefully chosen antiques and a rooftop terrace overlooking the Tagus.', priceBand: 'Check current rates', href: hotelLink }],
+    neighbourhoods: [
+      { name: 'Baixa', description: 'The orderly, central district rebuilt after the 1755 earthquake, stretching from Praça do Comércio into the city centre.' },
+      { name: 'Alfama', description: 'A steep medieval maze of lanes, tiled façades, balconies and traditional fado houses beneath São Jorge Castle.' },
+      { name: 'Chiado & Bairro Alto', description: 'Historic cafés and bookshops by day, with lively bars and late-night street life after dark.' },
+      { name: 'Príncipe Real', description: 'Leafy gardens, independent shops, concept stores and a growing natural-wine scene.' },
+    ],
+    eatDrink: 'Start with a bica and a pastel de nata dusted with cinnamon. For dinner, look for garlic shrimp, grilled sardines and local rice dishes; pair them with Vinho Verde or a glass from Dão or Alentejo.',
+  },
 ]
 
 export const countryFilters = ['Spain', 'Portugal', 'Italy', 'France', 'Greece']
