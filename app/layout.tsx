@@ -1,6 +1,5 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import Script, { type ScriptProps } from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -42,30 +41,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <Script
-          id="travelpayouts-drive-bootstrap"
-          strategy="beforeInteractive"
-          {...({
-            nowprocket: '',
-            'data-noptimize': '1',
-            'data-cfasync': 'false',
-            'data-wpfc-render': 'false',
-            'seraph-accel-crit': '1',
-            'data-no-defer': '1',
-            'data-cmp-ab': '2',
-          } as ScriptProps)}
-          dangerouslySetInnerHTML={{
-            __html: `(function () {
-              if (document.getElementById('travelpayouts-drive')) return;
-              var script = document.createElement('script');
-              script.id = 'travelpayouts-drive';
-              script.async = 1;
-              script.setAttribute('data-cmp-ab', '2');
-              script.src = 'https://tpembars.com/NjA2ODMz.js?t=606833';
-              document.head.appendChild(script);
-            })();`,
-          }}
-        />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

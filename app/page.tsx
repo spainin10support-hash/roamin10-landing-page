@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import Script, { type ScriptProps } from 'next/script'
 import { ArrowRight, CloudSun, Compass, ShieldCheck, Sparkles } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { DestinationBrowser } from '@/components/destination-browser'
@@ -25,6 +26,30 @@ const forecasts = [
 
 export default function Home() {
   return <main className="site-shell" id="top">
+    <Script
+      id="travelpayouts-drive-bootstrap"
+      strategy="afterInteractive"
+      {...({
+        nowprocket: '',
+        'data-noptimize': '1',
+        'data-cfasync': 'false',
+        'data-wpfc-render': 'false',
+        'seraph-accel-crit': '1',
+        'data-no-defer': '1',
+        'data-cmp-ab': '2',
+      } as ScriptProps)}
+      dangerouslySetInnerHTML={{
+        __html: `(function () {
+          if (document.getElementById('travelpayouts-drive')) return;
+          var script = document.createElement('script');
+          script.id = 'travelpayouts-drive';
+          script.async = 1;
+          script.setAttribute('data-cmp-ab', '2');
+          script.src = 'https://tpembars.com/NjA2ODMz.js?t=606833';
+          document.head.appendChild(script);
+        })();`,
+      }}
+    />
     <SiteHeader />
     <BlackFridayBanner />
     <section className="hero"><div className="hero-copy"><p className="eyebrow"><Sparkles size={14} /> The Mediterranean, edited</p><h1>The Mediterranean,<br /><em>Unfiltered</em> in 10 Minutes.</h1><p className="hero-lede">The smart, beautiful shortcut to better coastlines, better neighbourhoods, and better days away.</p><div className="hero-actions"><a className="primary-btn" href="https://play.google.com/store/apps/details?id=com.roamin10.twa&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Get Roamin10 on Google Play <ArrowRight size={16} /></a><Link className="text-link" href="#destinations">Explore destinations <ArrowRight size={16} /></Link></div></div><div className="hero-image"><img src="https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?auto=format&fit=crop&w=1500&q=90" alt="Turquoise Mediterranean coast and sunlit cliffs" width="1500" height="1000" loading="eager" fetchPriority="high" /><div className="hero-note"><span>Roamin10 field note</span><strong>Good days start with a better edit.</strong></div></div></section>
