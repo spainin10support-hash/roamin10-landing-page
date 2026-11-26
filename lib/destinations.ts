@@ -195,6 +195,121 @@ export const destinations: Destination[] = [
       { name: 'Sagres', description: 'A rugged, wind-swept corner of the Algarve known for dramatic headlands and surfing.' },
     ],
   },
+  {
+    name: 'Rome',
+    slug: 'rome',
+    country: 'Italy',
+    countrySlug: 'italy',
+    region: 'Central Italy',
+    airport: 'FCO',
+    image: '/placeholder.svg',
+    weather: '14° · Mild',
+    weatherDetails: { temp: 14, condition: 'Mild', wind: '10 km/h', sunlight: '9 hours' },
+    highlights: 'Centro Storico · Trastevere · Testaccio',
+    description: 'Travertine glowing at golden hour, vintage Vespas, guanciale sizzling in cast iron and Baroque fountains around every corner.',
+    whyVisit: `Rome does not reveal itself in orderly museum galleries; it is a chaotic, layered, living open-air theater where three thousand years of civilization are stacked haphazardly on top of one another. The Eternal City demands that you surrender your itinerary and walk. One moment you are dodging morning traffic along a sleek modern boulevard; the next, you turn down a cobblestone alley (vicolo) and find yourself staring into the sunken ruins of Republican-era temples or listening to the echo of church bells cascading from a Baroque dome designed by Borromini. Rome has a heavy, cinematic weight, yet its daily rhythm is remarkably intimate, anchored by local neighborhood piazzas where grandmothers chat from window sills and neighborhood baristas remember your morning espresso order to the second.
+
+The Colosseum and Roman Forum at first light. Skip the chaotic midday tour groups. Walk along the Via dei Fori Imperiali right at sunrise (around 6:30 AM). With the morning mist rising through the ancient pine trees and the light turning the travertine arches of the Colosseum deep amber, you'll have the monumental heart of ancient Rome to yourself.
+
+The Testaccio food pilgrimage. Take the metro to Piramide and head into the residential neighborhood of Testaccio. Eat slow-simmered tripe (trippa alla romana) or rigatoni con la pajata at Checchino dal 1887, then grab a panino stuffed with braised beef brisket (allesso di scottona) inside the Testaccio Market.
+
+Midnight silence at the Pantheon. Walk through the Centro Storico after midnight when the restaurant terraces have closed and the tour groups have vanished. Stand in the center of Piazza della Rotonda beneath the floodlit granite columns of the Pantheon, listening only to the trickle of the central fountain.`,
+    thingsToDo: [
+      'Watch the Colosseum glow at sunrise.',
+      'Eat your way through Testaccio.',
+      'Stand alone at the Pantheon after midnight.',
+    ],
+    stayIn: 'Portrait Roma sits above Via Condotti, steps from the Spanish Steps, which keeps you central but quiet.',
+    scamShield: `The "Gladiator" Photo Shakedown: Outside the Colosseum and Roman Forum, men dressed in cheap gladiator armor will offer plastic swords and jump into your vacation photos. The second the shutter clicks, they will surround you demanding €20–€50 per person. Do not engage, and never hand them your camera.
+
+The Unmarked Seafood Trap: Traditional trattorias displaying fresh fish on ice often list prices per 100 grams (etto), not per portion. Always have the waiter weigh the fish and write down the total in euros before it goes to the grill, to avoid a surprise €140 pasta bill.
+
+The "Dropped Ring" & Friendship Bracelet Hustle: Near the Colosseum and Spanish Steps, people will claim you dropped a gold ring, or try to tie a "free" braided thread onto your wrist. Pull your hand back immediately with a firm "No"; if they tie it, they will block you until you hand over cash.`,
+    hotels: [{ name: 'Portrait Roma', neighbourhood: 'Via Condotti · Spanish Steps', description: 'Tucked quietly above the luxury boutiques of Via Condotti, just steps from the Spanish Steps. With only 14 opulent suites, bespoke Italian mid-century furniture and a private rooftop terrace overlooking the Trinità dei Monti, it offers absolute seclusion in the monumental heart of Rome.', priceBand: 'Check current rates', href: hotelLink }],
+    quickFacts: { bestFor: 'History, food and first-time Italy', idealStay: '3-4 days', bestMonths: 'April-June, September-October', airportToCentre: 'About 30 minutes by Leonardo Express train from FCO to Termini' },
+    neighbourhoods: [
+      { name: 'Centro Storico', description: "Home to the Pantheon, Piazza Navona and Campo de' Fiori, where narrow Renaissance corridors open suddenly into sunlit piazzas anchored by Bernini's marble waterworks." },
+      { name: 'Trastevere', description: 'Tucked beneath the Janiculum Hill. The main thoroughfares can feel tourist-heavy at dusk, but the quiet side-streets reveal medieval archways draped in wild ivy and family-run trattorias with handwritten seasonal menus.' },
+      { name: 'Monti', description: "Rome's first bohemian quarter, just east of the Colosseum, packed with independent vintage shops, artisan jewelers and natural wine bars crowded with young Romans on the curb of Piazza della Madonna dei Monti." },
+      { name: 'Testaccio', description: 'The historic working-class butcher district and culinary engine of the capital, where traditional Roman offal recipes and the stalls at Mercato Testaccio thrive without modern pretense.' },
+    ],
+    eatDrink: `What makes Rome truly unforgettable is its unapologetic devotion to pleasure. Days here are structured around simple, non-negotiable rituals: an early morning espresso consumed standing at a zinc bar counter, an afternoon gelato eaten while leaning against an ancient Roman wall, and a twilight passeggiata as the light turns from blinding white to a smoky, golden peach. When dinner finally arrives around 9:00 PM, dining is taken dead seriously. Creamy, peppery bowls of Cacio e Pepe, rich Carbonara laced with crispy cured pork jowl, and flash-fried Jewish-style artichokes (carciofi alla giudìa) are consumed alongside chilled carafes of Roman Castelli Romani white wine. Rome may be ancient, but its appetite for life is eternal.`,
+    gettingThereAround: `Fiumicino (FCO) is the main international airport. The Leonardo Express runs non-stop to Termini in about 32 minutes, and the regional FL1 train is cheaper and stops at Trastevere and Ostiense. Ciampino (CIA) handles many low-cost flights and is linked to Termini by bus. Rome's centre is very walkable, and the metro (lines A, B and C) covers the rest: A for the Spanish Steps, B for the Colosseum and Piramide. Buy and validate your ticket before boarding. Use official white licensed taxis only, and keep bags zipped on crowded buses and metros.`,
+    whenToGo: 'Spring (April-June) and early autumn (September-October) are the sweet spots: warm, long days and beautiful light. July and August are hot, often above 30°C, and crowded, and some family-run places close around Ferragosto (15 August). Winter is cooler and quieter, with shorter queues at the big sights and lower hotel rates, though Christmas and Easter are busy. In any season, book the Colosseum and Vatican Museums ahead.',
+    dayTrips: [
+      "Ostia Antica: the ruins of ancient Rome's port, about 30-40 minutes by train from Porta San Paolo.",
+      "Tivoli: Villa d'Este's fountains and Hadrian's Villa, about an hour away.",
+      'Frascati and the Castelli Romani: hill towns known for white wine and porchetta, about 30 minutes by train from Termini.',
+      'Orvieto: a hilltop Umbrian town with a spectacular cathedral, about 75 minutes by train from Termini.',
+    ],
+    faq: [
+      { question: 'What are the best things to do in Rome?', answer: 'Start with the Colosseum, Roman Forum and Pantheon, then balance them with slower pleasures: a food crawl through Testaccio, sunset in Trastevere and an early-morning walk before the crowds arrive.' },
+      { question: "What are Rome's hidden gems?", answer: 'Head for the local corners: Testaccio for authentic Roman cooking, the side-streets of Monti for vintage shops and natural wine bars, and the quiet lanes of Trastevere away from the main thoroughfares.' },
+      { question: 'How many days do you need in Rome?', answer: 'Three full days covers the headline sights at a comfortable pace. Four or five lets you add Testaccio, a day trip and slower meals.' },
+      { question: 'Do I need to book the Colosseum and Vatican Museums in advance?', answer: 'Yes. Both sell out in busy seasons, so book timed tickets through the official sites several weeks ahead and avoid resellers who add large markups.' },
+      { question: 'Where should first-timers stay in Rome?', answer: 'Centro Storico for walkability, Monti for a local feel near the Colosseum, Trastevere for lively evenings, and the Via Condotti area for quiet luxury.' },
+      { question: 'Is Rome safe?', answer: 'Generally yes. The main risks are pickpockets and tourist scams around the Colosseum, Termini and the Spanish Steps. See the Scam Shield above.' },
+      { question: 'Is tipping expected in Rome?', answer: 'Not really. A coperto (cover charge) is often added and service is sometimes included, so check the bill. Rounding up a little is fine.' },
+      { question: 'Can I drink the tap water?', answer: 'Yes. Rome\'s tap water is safe, and the public drinking fountains (nasoni) are free.' },
+    ],
+  },
+  {
+    name: 'Florence',
+    slug: 'florence',
+    country: 'Italy',
+    countrySlug: 'italy',
+    region: 'Tuscany',
+    airport: 'FLR',
+    image: '/placeholder.svg',
+    weather: '12° · Cool',
+    weatherDetails: { temp: 12, condition: 'Cool', wind: '8 km/h', sunlight: '9 hours' },
+    highlights: 'Duomo · Oltrarno · San Miniato',
+    description: 'Tuscan leather and woodsmoke, terracotta rooftops against the Apennine hills and Chianti passed through medieval wine windows.',
+    whyVisit: `Florence is an architectural jewel box where the Renaissance was quite literally hammered into existence. Compact, pedestrian-friendly and breathtakingly concentrated, this Tuscan capital feels less like a modern metropolis and more like a preserved 15th-century kingdom of stone, marble and frescoed plaster. Set inside a natural amphitheater formed by the Tuscan hills and bisected by the slow-moving Arno River, Florence is dominated at every turn by the colossal terracotta-tiled cupola of Brunelleschi's Duomo (Santa Maria del Fiore). The scale of the city's artistic achievements, from Michelangelo's David at the Accademia to the Botticelli masterpieces hanging inside the Uffizi Gallery, is so staggering that it famously induced vertigo in the French writer Stendhal.
+
+Sunset from the marble terrace of San Miniato al Monte. Ditch the overcrowded, beer-can-strewn steps of Piazzale Michelangelo. Walk fifteen minutes further uphill to the 1,000-year-old Romanesque basilica of San Miniato al Monte. Stand against the marble balustrade as the sun dips behind the Tuscan hills, illuminating the entire red-roofed panorama of Florence in dusky pink.
+
+The "Buchetta del Vino" (wine window) crawl in Oltrarno. Hunt down the tiny arched wooden hatches carved into the stone facades of Renaissance palaces (historically used during plagues to sell wine without contact). Knock on the shutter at Babae, order a glass of Chianti, and have it handed to you directly onto the cobblestone street.
+
+The Oltrarno artisan studio trail. Spend a morning wandering the backstreets around Piazza Santo Spirito (like Via Maggio and Via dei Serragli). Duck into working bottegas to watch master artisans hand-marbling Italian paper, carving antique gilded picture frames or tailoring custom leather shoes.`,
+    thingsToDo: [
+      'Watch sunset from San Miniato al Monte.',
+      'Sip Chianti through a Florentine wine window.',
+      'Wander the Oltrarno artisan studios.',
+    ],
+    stayIn: 'Portrait Firenze sits right on the Arno, with panoramic views of the Ponte Vecchio.',
+    scamShield: `The Fake San Lorenzo Leather Stalls: Many open-air stalls in the San Lorenzo market sell synthetic bags stamped "Genuine Italian Leather" from overseas factories. To spot real Tuscan leather, smell it (it should smell rich and earthy, not like chemical glue), check for unfinished raw edges, and shop at verified workshops like the Scuola del Cuoio behind Santa Croce.
+
+The "Seated Café Surcharge": Ordering an espresso or pastry standing at the bar costs a fraction of the price of sitting at an outdoor table on Piazza della Signoria or Piazza del Duomo. Always check the table-service price list before you sit down.
+
+Pickpockets: Crowded spots such as the Duomo, the Ponte Vecchio and Santa Maria Novella station are favorite hunting grounds. Keep valuables in a front pocket or a zipped bag.`,
+    hotels: [{ name: 'Portrait Firenze', neighbourhood: 'Arno riverfront · Ponte Vecchio', description: "Part of the Lungarno Collection owned by the Ferragamo family, this ultra-chic boutique hotel sits directly on the banks of the Arno, with panoramic views of the historic Ponte Vecchio. Featuring 1950s haute couture photography, private butler service and bespoke Italian mid-century furniture, it is Florence's finest address.", priceBand: 'Check current rates', href: hotelLink }],
+    quickFacts: { bestFor: 'Art, Tuscan food and slow evenings', idealStay: '2-3 days', bestMonths: 'April-June, September-October', airportToCentre: 'About 20 minutes by taxi or airport shuttle bus from FLR' },
+    neighbourhoods: [
+      { name: 'San Marco and San Lorenzo', description: 'The northern bank of the Arno, where the grand Medici palaces sit alongside lively morning produce and tripe markets.' },
+      { name: "Via de' Tornabuoni and the west", description: 'Elegant pedestrian avenues that showcase the peak of modern Italian high fashion.' },
+      { name: 'Oltrarno (Santo Spirito and San Frediano)', description: 'Cross the shop-lined Ponte Vecchio to find the living soul of Florence. Intimate piazzas are shaded by leafy trees, and narrow medieval alleys echo with the sound of chisels, wood lathes and hammers from family workshops where bookbinders, goldsmiths and leatherworkers have passed down their crafts for generations.' },
+    ],
+    eatDrink: `Dining in Florence is an earthy, carnivore-centric celebration of the surrounding Tuscan countryside. Florentines have zero patience for dainty culinary minimalism; they honor massive, bone-in steaks (Bistecca alla Fiorentina) sliced thick, seasoned only with coarse sea salt, rosemary and peppery extra virgin olive oil, and seared rare over charcoal. Street food here is ancient and unapologetic: the legendary panino con il lampredotto (slow-stewed cow stomach cooked in vegetable broth and slathered in spicy green herb sauce) is eaten standing at market corners with a glass of house red. In the evening, the city takes on a romantic, quiet glow as the day-trippers leave, opening the cobblestones to quiet night strolls along the Arno under warm amber streetlights.`,
+    gettingThereAround: 'Florence airport (FLR) is small and close to the centre. Pisa (PSA) is the main alternative, with trains of about an hour to Santa Maria Novella station. High-speed trains from Rome take roughly 90 minutes. The historic centre is compact and walkable, and buses and trams are rarely needed. Do not drive into the ZTL (limited traffic zone): cameras issue heavy fines automatically, so park outside the centre.',
+    whenToGo: 'Spring (April-June) and early autumn (September-October) are the best times: pleasant temperatures and golden light. July and August can be very hot and crowded, and some family-run restaurants close for part of August. Winter is cool and quiet, with shorter queues at the big museums, though Christmas and Easter are busy. In any season, book the Uffizi and the Accademia ahead.',
+    dayTrips: [
+      'Pisa: the Leaning Tower and Piazza dei Miracoli, about an hour by train.',
+      'Siena: a medieval hill city with a shell-shaped main square, about 75 minutes by bus.',
+      'Chianti wine country: vineyards and hill villages, best by tour or hire car.',
+      'Lucca: a walled town you can cycle around, about 80 minutes by train.',
+    ],
+    faq: [
+      { question: 'What are the best things to do in Florence?', answer: "See the Duomo, the Uffizi and Michelangelo's David at the Accademia, cross the Ponte Vecchio, then balance the big sights with sunset at San Miniato, a wine window and the Oltrarno workshops." },
+      { question: "What are Florence's hidden gems?", answer: 'San Miniato al Monte, the artisan workshops of the Oltrarno and the tiny wine windows (buchette del vino) tucked into palace walls.' },
+      { question: 'How many days do you need in Florence?', answer: 'Two full days covers the headline sights. Three adds the Oltrarno, San Miniato and a day trip.' },
+      { question: 'Do I need to book the Uffizi and the Accademia in advance?', answer: 'Yes. Book timed tickets through the official sites ahead of time and avoid resellers who add large markups.' },
+      { question: 'Where should first-timers stay in Florence?', answer: 'The historic centre for walkability, the Oltrarno for a quieter local feel, or near Santa Maria Novella station for easy transport.' },
+      { question: 'Is Florence safe?', answer: 'Generally yes. The main risk is pickpocketing around the Duomo, the Ponte Vecchio and the station.' },
+      { question: 'What should I eat in Florence?', answer: 'Bistecca alla Fiorentina, lampredotto sandwiches from market stalls, and ribollita (Tuscan bread soup).' },
+      { question: 'Can I drive in central Florence?', answer: 'No. The centre is a ZTL (limited traffic zone) with automatic fines for unauthorised cars, so leave the car outside.' },
+    ],
+  },
 ]
 
 export const countryFilters = ['Spain', 'Portugal', 'Italy', 'France', 'Greece']

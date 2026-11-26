@@ -19,7 +19,12 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const { country, city } = await params
   const destination = getDestination(country, city) ?? destinations[0]
   const title = destination.slug === 'barcelona' ? 'Barcelona Travel Guide: Where to Stay & What to Skip | Roamin10' : `${destination.name} Travel Guide: Where to Stay, Eat & Avoid Scams | Roamin10`
- const description = destination.slug === 'barcelona' ? 'Where to stay in Barcelona, what to book ahead, how to get from the airport and the scams to avoid. A 10-minute guide by Sarah.' : `${destination.name} travel guide by Sarah: where to stay, things to do, weather, hotel picks and local Scam Shield tips.`
+ const description =
+   destination.countrySlug === 'italy'
+     ? destination.description
+     : destination.slug === 'barcelona'
+       ? 'Where to stay in Barcelona, what to book ahead, how to get from the airport and the scams to avoid. A 10-minute guide by Sarah.'
+       : `${destination.name} travel guide by Sarah: where to stay, things to do, weather, hotel picks and local Scam Shield tips.`
  const url = `https://www.roamin10.com/${destination.countrySlug}/${destination.slug}`
  return { title, description, alternates: { canonical: url }, openGraph: { title: `${destination.name} Travel Guide | Roamin10`, description, url, type: 'article', images: [{ url: destination.image, alt: `${destination.name} travel guide` }] } }
 }
