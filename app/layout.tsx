@@ -4,6 +4,7 @@ import Script, { type ScriptProps } from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.roamin10.com'),
   title: 'Roamin10 — Mediterranean Travel Guide & App',
   description: 'Discover Roamin10, the European travel app with city guides and premium planning features, plus 10 Minute Spain, free for now. Explore better with less searching.',
   alternates: { canonical: 'https://www.roamin10.com/' },

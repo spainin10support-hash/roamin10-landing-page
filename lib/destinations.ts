@@ -328,6 +328,254 @@ Pickpockets: Crowded spots such as the Duomo, the Ponte Vecchio and Santa Maria 
       { question: 'Can I drive in central Florence?', answer: 'No. The centre is a ZTL (limited traffic zone) with automatic fines for unauthorised cars, so leave the car outside.' },
     ],
   },
+  {
+    name: 'Venice',
+    slug: 'venice',
+    country: 'Italy',
+    countrySlug: 'italy',
+    region: 'Veneto',
+    airport: 'VCE',
+    image: '/venice-grand-canal.jpg',
+    imageData: {
+      src: '/venice-grand-canal.jpg',
+      alt: 'The Grand Canal at night, viewed from the Ponte degli Scalzi in Venice.',
+      caption: 'The Grand Canal at night, seen from the Ponte degli Scalzi.',
+      credit: 'Kallerna via Wikimedia Commons',
+      creditUrl: 'https://commons.wikimedia.org/wiki/File:Grand_Canal_Ponte_degli_Scalzi.jpg',
+      license: 'CC BY-SA 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    },
+    weather: 'Cool winters · humid summers',
+    weatherDetails: { temp: 14, condition: 'Mild winters and humid summers', wind: 'Lagoon breezes', sunlight: 'Seasonal daylight' },
+    highlights: 'Grand Canal · Cannaregio · Dorsoduro',
+    description: 'A lagoon city of Gothic palazzi, quiet canals, cicchetti bars and water-bus rides that feel more like a ritual than a commute.',
+    whyVisit: `There is no city on earth that defies reality quite like Venice. Rising from the silty waters of a shallow Adriatic lagoon, La Serenissima is an engineering and architectural wonder of small islands linked by stone bridges. Without cars or delivery trucks, the city moves to a watery rhythm: oars, vaporetti and footsteps crossing arched bridges. Venice is a sensory masterclass of Gothic palaces, Byzantine mosaics, shimmering lagoon light and narrow calli that defy any standard digital map.
+
+To truly fall in love with Venice, leave the congested corridor between Santa Lucia station and Piazza San Marco for the quieter sestieri. Cannaregio, to the north, is home to the historic Jewish Ghetto and everyday Venetian life, with wine bars along Fondamenta della Misericordia. Dorsoduro offers an artistic sanctuary, including the Peggy Guggenheim Collection, independent ateliers and leafy courtyards. In Castello, around the historic Arsenale, laundry still hangs between brick townhouses and fishmongers work by the water.
+
+Venice’s food culture follows the rhythms of the lagoon and the bacaro, a small wine tavern serving ombra (a glass of local wine) with cicchetti. Look for baccalà mantecato on polenta, sarde in saor and freshly made meatballs. Make it a canal-side crawl, moving from one counter to the next as the tide rolls in and amber lamps reflect on the water.`,
+    thingsToDo: [
+      'Take vaporetto Line 1 along the Grand Canal after dark for a slower look at the palazzi and lit waterfront.',
+      'Start a cicchetti crawl around Fondamenta dei Ormesini and Fondamenta della Misericordia in Cannaregio.',
+      'Cross to San Giorgio Maggiore and climb the bell tower for a view back toward the Doge’s Palace and San Marco basin.',
+    ],
+    stayIn: 'The Gritti Palace sits on the Grand Canal opposite Santa Maria della Salute, in a restored historic palazzo with a private canal entrance.',
+    scamShield: `Seafood priced by weight: Some menus quote fish by 100 grams rather than by the whole portion. Ask for the exact total in writing before ordering.
+
+Private water taxis: Use licensed operators and confirm the route, luggage charges and any evening supplement before boarding. Public vaporetti and scheduled airport boats are lower-cost alternatives.
+
+Live-music supplements: Historic cafés around Piazza San Marco may list a separate music charge. Check the menu and cover terms before sitting down.`,
+    hotels: [{ name: 'The Gritti Palace', neighbourhood: 'San Marco · Grand Canal', description: 'A landmark 15th-century palazzo overlooking the Grand Canal opposite Santa Maria della Salute, known for its restored interiors and private boat landing.', priceBand: 'Check current rates', href: hotelLink }],
+    quickFacts: { bestFor: 'Canals, art, architecture and slow evenings', idealStay: '2–3 days', bestMonths: 'April–June, September–October', airportToCentre: 'VCE: bus to Piazzale Roma or Alilaguna waterbus to lagoon stops' },
+    neighbourhoods: [
+      { name: 'Cannaregio', description: 'A lived-in northern sestiere with the historic Jewish Ghetto, quiet canals and bacari along Fondamenta della Misericordia.' },
+      { name: 'Dorsoduro', description: 'An unhurried, art-filled district with the Peggy Guggenheim Collection, independent studios and quiet campo squares.' },
+      { name: 'Castello', description: 'A residential eastern quarter around the Arsenale, where local markets and everyday Venetian life sit beyond the busiest sights.' },
+      { name: 'San Marco', description: 'The grand, central district for the basilica, Doge’s Palace and classic lagoon views; expect the largest crowds.' },
+    ],
+    eatDrink: `Venetian food is best explored through its bacari: small, stand-up wine bars serving an ombra alongside cicchetti. Try baccalà mantecato on polenta, sweet-and-sour sarde in saor and fried meatballs. Make a progressive meal of it, stopping at several counters rather than settling into one long formal dinner.`,
+    gettingThereAround: 'Venice Marco Polo Airport (VCE) is on the mainland. ATVO and ACTV buses connect to Piazzale Roma, while Alilaguna runs scheduled boats to lagoon stops. Venezia Santa Lucia station is directly on the historic island. Cars do not circulate through the historic centre; most visitors walk and use ACTV vaporetti for longer crossings.',
+    whenToGo: 'April–June and September–October usually balance comfortable walking weather with fewer peak-summer crowds. Summer is warm, humid and busy; winter is cooler and damp, with quieter lanes. Check seasonal transport and opening times before booking island trips.',
+    dayTrips: [
+      'Murano: watch glassmaking and explore the island’s canals by vaporetto.',
+      'Burano: see the brightly coloured houses and lace-making traditions; check boat frequency before going.',
+      'Torcello: visit the lagoon’s quieter northern island and its historic basilica.',
+      'Padua: an easy rail day trip for the Scrovegni Chapel and university quarter.',
+    ],
+    faq: [
+      { question: 'How many days should I spend in Venice?', answer: 'Two full days cover the main sights and one quieter sestiere. Three days leaves time for the lagoon islands without rushing.' },
+      { question: 'How do I get from Venice airport to the centre?', answer: 'From Marco Polo Airport (VCE), take a bus to Piazzale Roma or a scheduled Alilaguna boat to a lagoon stop. Choose by your hotel location and check current timetables.' },
+      { question: 'Where should I stay in Venice?', answer: 'Cannaregio and Dorsoduro offer a calmer base; San Marco is closest to the headline sights but busier.' },
+      { question: 'Do I need a car in Venice?', answer: 'No. The historic island is car-free for visitors; walk and use vaporetti or scheduled water transport.' },
+      { question: 'What should I eat in Venice?', answer: 'Try cicchetti such as baccalà mantecato and sarde in saor, with an ombra at a local bacaro.' },
+    ],
+  },
+  {
+    name: 'Milan',
+    slug: 'milan',
+    country: 'Italy',
+    countrySlug: 'italy',
+    region: 'Lombardy',
+    airport: 'MXP / LIN',
+    image: '/milan-skyline.jpg',
+    imageData: {
+      src: '/milan-skyline.jpg',
+      alt: 'Milan’s rooftops and contemporary skyline viewed from the Duomo terraces, with the Alps in the distance.',
+      caption: 'The Milan skyline from the roof of the Duomo.',
+      credit: 'Daniel Case via Wikimedia Commons',
+      creditUrl: 'https://commons.wikimedia.org/wiki/File:Full_Milan_skyline_from_Duomo_roof.jpg',
+      license: 'CC BY-SA 3.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    },
+    weather: 'Hot summers · cool damp winters',
+    weatherDetails: { temp: 13, condition: 'Humid summers and cool winters', wind: 'Variable', sunlight: 'Seasonal daylight' },
+    highlights: 'Duomo · Brera · Navigli',
+    description: 'A high-energy city of Renaissance masterpieces, sleek design, aperitivo bars and polished, lived-in neighbourhoods.',
+    whyVisit: `Milan is Italy’s dynamic powerhouse—a cosmopolitan metropolis shaped by fashion, design, finance and publishing. Yet behind its contemporary skyline and busy tram network are historic treasures tucked inside neoclassical palazzi, heavy wooden carriage doors and quiet courtyards.
+
+The spiritual and architectural heart of the city is Piazza del Duomo, anchored by the Gothic cathedral built from pale Candoglia marble. Beside it, the glass-vaulted Galleria Vittorio Emanuele II is Milan’s “drawing room,” with historic cafés and heritage boutiques. Nearby Brera is an artistic quarter of galleries, perfume ateliers and leafy terraces; south of the centre, Navigli’s canals lead into the city’s lively evening scene.
+
+Milan’s aperitivo is a daily ritual. Around early evening, bars fill for a Negroni Sbagliato or Campari Spritz with snacks, before dinner moves toward Lombard classics: saffron risotto, slow-braised ossobuco and cotoletta alla Milanese. It is a city where modern energy and historic grandeur sit comfortably side by side.`,
+    thingsToDo: [
+      'Walk the Duomo terraces among marble spires and statues; book the official ticket in advance.',
+      'Order a Negroni Sbagliato at Bar Basso, the bar associated with the cocktail’s creation.',
+      'Tour Villa Necchi Campiglio for 1930s architecture, period interiors and its garden retreat.',
+    ],
+    stayIn: 'Mandarin Oriental, Milan occupies interconnected historic palazzos in the Quadrilatero della Moda, with an intimate courtyard and the Michelin-starred Seta restaurant.',
+    scamShield: `Unwanted “friendship” bracelets: Around busy central squares, decline unsolicited gifts and keep walking if someone tries to tie a thread around your wrist.
+
+Ticket-machine “helpers”: At Milano Centrale, buy tickets through official machines, apps or staffed desks. Decline unsolicited assistance and keep your payment card and phone secure.
+
+Galleria terrace pricing: Check the menu, service charge and table terms before sitting at a café terrace in the Galleria or around Piazza del Duomo.`,
+    hotels: [{ name: 'Mandarin Oriental, Milan', neighbourhood: 'Quadrilatero della Moda', description: 'A refined stay across four connected historic palazzos, with interiors by Antonio Citterio and a tucked-away garden courtyard.', priceBand: 'Check current rates', href: hotelLink }],
+    quickFacts: { bestFor: 'Design, fashion, art and aperitivo', idealStay: '2–3 days', bestMonths: 'April–June, September–October', airportToCentre: 'MXP: Malpensa Express; LIN: M4 metro into the city' },
+    neighbourhoods: [
+      { name: 'Duomo and Centro Storico', description: 'The historic core for the cathedral, Galleria and major museums, with convenient metro connections.' },
+      { name: 'Brera', description: 'An elegant, creative quarter of galleries, independent shops, cafés and narrow streets.' },
+      { name: 'Navigli', description: 'Canalside bars, restaurants and evening energy; choose a side street if you prefer quieter nights.' },
+      { name: 'Porta Venezia', description: 'A lively, well-connected neighbourhood with Liberty architecture, gardens and an easy link to Villa Necchi Campiglio.' },
+    ],
+    eatDrink: `Milan’s aperitivo hour pairs a Campari Spritz or Negroni Sbagliato with a spread of small bites. For dinner, look for saffron-infused risotto alla Milanese, ossobuco and the crisp, golden cotoletta alla Milanese. The city’s food reflects Lombardy’s richer, butter-forward cooking, best enjoyed without rushing the evening.`,
+    gettingThereAround: 'Milan is served by Malpensa (MXP) and Linate (LIN), as well as Bergamo (BGY) for some routes. Malpensa Express trains connect MXP with Milano Centrale and Cadorna; M4 connects Linate with the metro network. The city’s metro, trams and walkable central districts make a car unnecessary. Check operator timetables for your arrival time.',
+    whenToGo: 'April–June and September–October are comfortable for walking and outdoor dining. Summers can be hot and humid; winters are cool, damp and sometimes foggy. August is quieter as some local businesses close, while fashion and design event weeks bring extra demand.',
+    dayTrips: [
+      'Como: take the train north for a lakeside walk and onward boat connections.',
+      'Bergamo: explore the walled Città Alta and its piazzas.',
+      'Pavia: visit the historic university town and the Certosa di Pavia.',
+      'Lake Maggiore: plan a longer day for lakeside towns and island ferries, checking seasonal schedules.',
+    ],
+    faq: [
+      { question: 'How many days do you need in Milan?', answer: 'Two days cover the Duomo, Brera and an evening in Navigli. Add another day for museums, Villa Necchi Campiglio or a day trip.' },
+      { question: 'Should I book the Last Supper in advance?', answer: 'Yes. Tickets are timed and capacity is limited; use the official booking channel and reserve as early as possible.' },
+      { question: 'Which Milan airport is closest to the centre?', answer: 'Linate (LIN) is closest and linked by the M4 metro. Malpensa (MXP) has direct rail connections, and Bergamo (BGY) is another airport used by some airlines.' },
+      { question: 'Where is a good area to stay in Milan?', answer: 'Brera suits a central, polished stay; Navigli is lively at night; Porta Venezia is well-connected and has a more residential feel.' },
+      { question: 'What food is Milan known for?', answer: 'Try risotto alla Milanese, ossobuco, cotoletta alla Milanese and an aperitivo with a Negroni Sbagliato.' },
+    ],
+  },
+  {
+    name: 'Naples',
+    slug: 'naples',
+    country: 'Italy',
+    countrySlug: 'italy',
+    region: 'Campania',
+    airport: 'NAP',
+    image: '/naples-gulf-vesuvius.jpg',
+    imageData: {
+      src: '/naples-gulf-vesuvius.jpg',
+      alt: 'The Port of Naples and Mount Vesuvius seen from Castel Sant’Elmo.',
+      caption: 'Naples harbour, the Gulf and Vesuvius from Castel Sant’Elmo.',
+      credit: 'Wolfgang Moroder via Wikimedia Commons',
+      creditUrl: 'https://commons.wikimedia.org/wiki/File:Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg',
+      license: 'CC BY-SA 3.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    },
+    weather: 'Mild winters · hot summers',
+    weatherDetails: { temp: 16, condition: 'Mild winters and hot summers', wind: 'Sea breezes', sunlight: 'Long summer days' },
+    highlights: 'Spaccanapoli · Sansevero · Lungomare',
+    description: 'Naples is a generous, volcanic seaport where ancient lanes, serious espresso, world-class pizza and Vesuvius share the same horizon.',
+    whyVisit: `Naples is not for the faint of heart; it is intense, unfiltered and sensory in the best way. Founded by the Greeks as Neapolis, it is one of Europe’s oldest continuously inhabited cities, with layers of Roman ruins, medieval fortresses and Bourbon palaces set beside working neighbourhoods. Mount Vesuvius stands across the bay, a constant presence on the horizon.
+
+The historic centre is bisected by Spaccanapoli, the straight Roman street that cuts through the old city. Here, scooters pass baroque chapels, fruit sellers call out their specials and artisans carve nativity figures along Via San Gregorio Armeno. To the west, the Spanish Quarters climb in a dense grid of lanes and murals; along the waterfront at Santa Lucia, the city opens onto sea views and Castel dell’Ovo.
+
+Naples is inseparable from its food. Pizza is made with a soft, hand-stretched dough and baked at high heat; espresso is dark and concentrated, often paired with a warm sfogliatella. The city’s warmth is as memorable as its appetite, and meals are rarely hurried.`,
+    thingsToDo: [
+      'Try a classic Neapolitan pizza at a respected pizzeria in the historic centre or Mergellina; expect a queue at popular addresses.',
+      'Book the Cappella Sansevero to see Giuseppe Sanmartino’s Veiled Christ, one of the city’s most remarkable marble sculptures.',
+      'Stand at the marble counter of Gran Caffè Gambrinus for espresso and a fresh sfogliatella.',
+    ],
+    stayIn: 'Grand Hotel Vesuvio overlooks the Santa Lucia waterfront and the Gulf of Naples, with long-established grand-hotel service and a rooftop restaurant.',
+    scamShield: `Street shell games: Avoid card or shell games around busy streets and stations. Crowds of apparent winners may be part of the setup, and pickpocketing can happen in the distraction.
+
+Scooter bag snatches: Keep phones out of your hand near traffic and wear zipped bags crossbody on the pavement-facing side.
+
+Airport taxis: Use official taxi ranks and ask for the published fixed fare (tariffa predeterminata) to your destination before departure. Confirm any supplements rather than accepting an unsolicited ride.`,
+    hotels: [{ name: 'Grand Hotel Vesuvio', neighbourhood: 'Santa Lucia · waterfront', description: 'A historic seafront hotel overlooking the Gulf, with views toward Vesuvius and Capri and a rooftop restaurant.', priceBand: 'Check current rates', href: hotelLink }],
+    quickFacts: { bestFor: 'Pizza, history, street life and day trips', idealStay: '2–3 days', bestMonths: 'April–June, September–October', airportToCentre: 'NAP: Alibus connects the airport with Napoli Centrale and the port' },
+    neighbourhoods: [
+      { name: 'Centro Storico', description: 'A dense, walkable historic core of churches, workshops, markets and the Spaccanapoli route.' },
+      { name: 'Quartieri Spagnoli', description: 'Steep, lively lanes west of the centre, known for street life, small trattorias and football murals.' },
+      { name: 'Chiaia and Santa Lucia', description: 'A more polished waterfront base for seafront walks, cafés and views across the bay.' },
+      { name: 'Vomero', description: 'A hilltop district reached by funicular, with broad views, quieter streets and Castel Sant’Elmo nearby.' },
+    ],
+    eatDrink: `Naples is the home of pizza, from a classic margherita to a folded street-food portafoglio. Pair it with a dark espresso and a warm sfogliatella riccia filled with sweet ricotta. For seafood, look toward the waterfront; in the historic centre, follow the neighbourhood trattorias rather than the most prominent tourist menus.`,
+    gettingThereAround: 'Naples International Airport (NAP) is close to the city. The Alibus links the airport with Napoli Centrale at Piazza Garibaldi and the port; check the current operator timetable and ticket rules. Use the metro and funiculars for longer or uphill journeys. The historic centre is best explored on foot, with attention to scooters and uneven pavements.',
+    whenToGo: 'April–June and September–October bring warm days without the height of summer heat. July and August are hot and busy; winter is comparatively mild but wetter. Spring and autumn also make day trips more comfortable, though ferries and archaeological-site schedules still vary.',
+    dayTrips: [
+      'Pompeii: spend a full day among the excavated Roman streets; check official opening and ticket information.',
+      'Herculaneum: a smaller, exceptionally preserved archaeological site reachable by regional rail.',
+      'Procida or Ischia: take a ferry from the port and check sailing times before setting out.',
+      'Royal Palace of Caserta: visit the palace and gardens on a rail day trip.',
+    ],
+    faq: [
+      { question: 'How many days do you need in Naples?', answer: 'Two full days give you time for the historic centre, a museum or waterfront walk, and the city’s food. Three or more allows a day trip.' },
+      { question: 'How do I get from Naples airport to the centre?', answer: 'Take the Alibus to Napoli Centrale at Piazza Garibaldi or the port. Check the operator’s current stops, fares and schedule.' },
+      { question: 'Is Naples a good base for Pompeii?', answer: 'Yes. Regional trains connect Naples with Pompeii and Herculaneum; check current service and site hours before planning.' },
+      { question: 'Where should first-time visitors stay in Naples?', answer: 'Centro Storico is convenient for sights and food; Chiaia or Santa Lucia is calmer and closer to the waterfront.' },
+      { question: 'What should I eat in Naples?', answer: 'Start with Neapolitan pizza, then try espresso and sfogliatella. Ask for the final price before ordering seafood sold by weight.' },
+    ],
+  },
+  {
+    name: 'Amalfi Coast',
+    slug: 'amalfi-coast',
+    country: 'Italy',
+    countrySlug: 'italy',
+    region: 'Campania',
+    airport: 'NAP / QSR',
+    image: '/amalfi-positano-dusk.jpg',
+    imageData: {
+      src: '/amalfi-positano-dusk.jpg',
+      alt: 'Positano’s pastel houses stepping down the cliff to the sea at dusk.',
+      caption: 'Positano at dusk on the Amalfi Coast.',
+      credit: 'Eric Hossinger via Wikimedia Commons',
+      creditUrl: 'https://commons.wikimedia.org/wiki/File:Positano_at_dusk,_Amalfi_Coast,_Italy.jpg',
+      license: 'CC BY 2.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    },
+    weather: 'Coastal Mediterranean climate',
+    weatherDetails: { temp: 17, condition: 'Mild winters and warm dry summers', wind: 'Sea breezes', sunlight: 'Long summer days' },
+    highlights: 'Positano · Amalfi · Ravello',
+    description: 'A cliff-hugging coastline of pastel villages, lemon terraces, sea routes and mountain paths, best explored slowly rather than by car.',
+    whyVisit: `Suspended between the Tyrrhenian Sea and the Lattari Mountains, the Amalfi Coast is a UNESCO World Heritage landscape of dramatic cliffs, pastel villages and terraced lemon groves. Its coastal road winds around headlands and gorges, while stone stairways connect villages perched above the water.
+
+The coast is a constellation of places rather than a single town. Positano tumbles down the hillside toward the beach; Amalfi’s cathedral recalls its maritime-republic history; and Ravello sits high above the shore, where gardens and sea views have inspired artists and writers. Smaller villages such as Praiano, Cetara and Minori offer a slower pace and their own local character.
+
+The coastline is best appreciated from the water as well as the road. Take a boat when services are running, or choose a walking route with time for the climb. Meals are rooted in the sea and the surrounding countryside: fresh catch, pasta with clams and local white wines. At dusk, the cliffs, lemon groves and village lights make the coast feel wonderfully unhurried.`,
+    thingsToDo: [
+      'Hike the Path of the Gods from Bomerano toward Nocelle, checking trail conditions and transport before setting out.',
+      'Take a licensed boat trip along the coast to see coves and cliffs from the water; confirm the itinerary and swimming stops.',
+      'Walk Villa Cimbrone’s gardens in Ravello and visit the Terrace of Infinity during opening hours.',
+    ],
+    stayIn: 'Belmond Hotel Caruso is an 11th-century palazzo in Ravello, high above the coast, with historic interiors, terraced gardens and a celebrated infinity pool.',
+    scamShield: `Peak-season buses: Coastal buses can fill and traffic can slow road journeys in summer. Check SITA Sud schedules and consider a scheduled ferry where routes and weather allow.
+
+Private transfers: Book licensed NCC drivers through a reputable company in advance. Confirm the full fare, tolls, luggage and pickup point in writing.
+
+Beach-club pricing: Ask for the full price list, including the exact row, before paying for loungers; rates can vary substantially by position and date.`,
+    hotels: [{ name: 'Belmond Hotel Caruso', neighbourhood: 'Ravello', description: 'An 11th-century palace perched above the Mediterranean, with frescoed interiors, terraced gardens and an iconic infinity pool.', priceBand: 'Check current rates', href: hotelLink }],
+    quickFacts: { bestFor: 'Coastal scenery, boat trips and hiking', idealStay: '3–5 days', bestMonths: 'May–June, September–early October', airportToCentre: 'Naples (NAP) is the main gateway; Salerno (QSR) may suit some routes. Continue by road, bus or ferry.' },
+    neighbourhoods: [
+      { name: 'Positano', description: 'A dramatic, vertical village with a beach, boutiques and postcard views; expect steep steps and high-season crowds.' },
+      { name: 'Amalfi', description: 'The coast’s historic namesake, with a cathedral piazza, ferry connections and a central position for exploring nearby towns.' },
+      { name: 'Ravello', description: 'A quieter hilltop base above the sea, known for historic gardens, cultural events and wide coastal views.' },
+      { name: 'Praiano and the smaller villages', description: 'A slower alternative between the major centres, with local restaurants, sea views and access to walking routes.' },
+    ],
+    eatDrink: `Amalfi Coast cooking is built around the sea and nearby hills: grilled fish, handmade pasta with clams, sweet local tomatoes and citrus. Look for wines from the Costa d’Amalfi DOC and ask which seafood is local and in season. A long lunch with a view is part of the rhythm here, not a detour from it.`,
+    gettingThereAround: 'The coast has no single central station or airport. Naples (NAP) is the main year-round air gateway; Salerno (QSR) can be convenient when flights align. From Naples, travel by road or connect by train to Salerno and onward by ferry when the route is operating. SITA Sud buses serve the coastal road, but summer traffic and full services can add time. Villages are steep and stair-heavy, so pack light and check seasonal timetables.',
+    whenToGo: 'May–June and September–early October offer warm weather and a better balance of crowds and transport availability. July and August are the busiest months. In winter, the coast is quieter, but some hotels, restaurants and boat services reduce their schedules or close.',
+    dayTrips: [
+      'Capri: take a ferry from an operating coastal port and check seasonal sailing times.',
+      'Pompeii: combine the coast with a visit to the excavated Roman city, allowing time for transfers.',
+      'Salerno: explore the old town and waterfront, with rail connections for onward travel.',
+      'Sorrento: use as a separate base or connect by seasonal ferry and road services, checking routes ahead.',
+    ],
+    faq: [
+      { question: 'How many days do you need on the Amalfi Coast?', answer: 'Three days covers a couple of villages without rushing. Five gives you room for a boat trip, Ravello and a coastal walk.' },
+      { question: 'Which town is the best base on the Amalfi Coast?', answer: 'Amalfi is central for transport, Positano is dramatic and lively, and Ravello is quieter and higher above the sea.' },
+      { question: 'Do I need a car on the Amalfi Coast?', answer: 'Usually not. Buses and seasonal ferries connect many villages, while driving and parking can be difficult in peak season.' },
+      { question: 'Which airport should I use for the Amalfi Coast?', answer: 'Naples (NAP) is the main year-round gateway. Check whether Salerno (QSR) has a suitable flight for your dates, then plan the onward connection.' },
+      { question: 'When do ferries run on the Amalfi Coast?', answer: 'Routes and frequency vary by season, port and weather. Check the operator timetable close to travel and keep a road option in mind.' },
+    ],
+  },
 ]
 
 export const countryFilters = ['Spain', 'Portugal', 'Italy', 'France', 'Greece']
